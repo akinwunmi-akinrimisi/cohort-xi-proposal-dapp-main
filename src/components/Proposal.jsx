@@ -13,7 +13,7 @@ const Proposal = ({
 }) => {
   const { vote, isVoting } = useVoteProposals();
   return (
-    <Box className="bg-slate-400 rounded-md shadow-sm p-4 w-96">
+    <Box className="bg-green-400 rounded-md shadow-sm p-4 w-96">
       <Text className="text-2xl mb-4">Proposals</Text>
       <Box className="w-full">
         <Flex className="flex gap-4">
@@ -44,7 +44,7 @@ const Proposal = ({
         </Flex>
       </Box>
       <Button
-        className={`bg-blue-500 ${
+        className={`bg-red-500 ${
           isVoting && "bg-opacity-60"
         } text-white font-bold w-full mt-4 p-4 rounded-md shadow-sm`}
         onClick={() => vote(id)}
